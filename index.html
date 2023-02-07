@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+       <a href="#"> <img class="logo" src="imagenes/logo.png" alt="Logo de alura con la inicial da letra a"></a>
+    </header>
+    <main>
+        <section>
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+            <div id="div-desaparece">
+                <h6 class="informacion"> <img class="exclamacion" src="imagenes/exclamacion.png" alt="signo de exclamacion">Solo letras minúsculas y sin acentos.</h6>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    <p class="enc">Encriptar</p> 
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    <p class="des">Desencriptar</p> 
+                </button>
+            </div>
+        </section>        
+        <section class="mensaje-box">
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+            <div class="temporal">
+                <h1>Ningún mensaje fue encotrado</h1>
+                <h2>Ingrese el texto que desees encriptar.</h2>
+            </div>
+            <button class="copiar" onclick="copiar()">
+               <p class="cop">Copiar</p> 
+            </button>
+        </section>        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h3>Encriptador</h3>
+            <p>Este es mi primer gran proyecto como programador</p>
+            <ul class="socials">
+                <li><a href="https://github.com/Dantlu"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dante-luongo-459354218/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://instagram.com/dante.luongo?igshid=YzgyMTM2MGM="><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Dante Luongo</p>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
